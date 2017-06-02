@@ -1,0 +1,20 @@
+<html ng-app="ContactListApp">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ibrahims Blog</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+
+  <div ng-controller="articleController">
+    <div ng-repeat="article in articles">
+      {{article}}
+    </div>
+  </div>
+
+  </body>
+
+</html>
