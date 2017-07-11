@@ -1,0 +1,13 @@
+{
+  "name": "searchengine",
+  "version": "1.0.0",
+  "description": "Simple Web Search Engine.",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Conrad Holmberg",
+  "license": "ISC"
+}
