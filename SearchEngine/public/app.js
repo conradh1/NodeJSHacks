@@ -26,7 +26,7 @@ searchEngineApp.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 })
 
-searchEngineApp.controller('searchCtrl', function($scope, $state, $stateParams) {
+searchEngineApp.controller('searchCtrl', function($http, $scope, $state, $stateParams) {
 
 	console.log("Called controller!");
 
@@ -39,5 +39,8 @@ searchEngineApp.controller('searchCtrl', function($scope, $state, $stateParams) 
         $scope.showKeywords = function() {
 			return "Results: " + $scope.keywords;
 		};
+		return $http.get('/home/'+$scope.keywords, { cache: true }).then(function(resp) {
+            return resp.data;
+        });
     };
 });
