@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Simple Web Search Engine.",
   "main": "app.js",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jsonfile": "^3.0.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

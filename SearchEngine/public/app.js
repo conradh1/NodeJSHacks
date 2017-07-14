@@ -16,13 +16,13 @@ searchEngineApp.config(function($stateProvider, $urlRouterProvider) {
                 },
                 reloadOnSearch: false
     })
-    
+
     .state({name: 'results',
 	    url: '/results?keywords',
           contorller: 'resultsCtrl',
           templateUrl: 'results.html'
     })
-   
+
     $urlRouterProvider.otherwise('/home');
 })
 
@@ -40,7 +40,8 @@ searchEngineApp.controller('searchCtrl', function($http, $scope, $state, $stateP
 			return "Results: " + $scope.keywords;
 		};
 		return $http.get('/home/'+$scope.keywords, { cache: true }).then(function(resp) {
-            return resp.data;
+			console.log("Get called...");
+			$scope.contactlist = resp.data;
         });
     };
 });
