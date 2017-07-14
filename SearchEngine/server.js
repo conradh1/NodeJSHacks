@@ -38,5 +38,12 @@ app.get('/home/:keywords', function (req, res) {
     };
 
 	var contactlist = [person1, person2, person3];
+	var fs  = require("fs");
+	var htmlFile = fs.readFileSync('tmp/cg.html').toString().split('\n');
+
+	for (var i = 0; i < htmlFile.length; i++) {
+
+
+	}
 	res.json(contactlist);
 });
