@@ -1,5 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var request = require('request');
+var cheerio = require('cheerio');
 var app = express();
 
 /* ==========================================================
@@ -38,12 +40,15 @@ app.get('/home/:keywords', function (req, res) {
     };
 
 	var contactlist = [person1, person2, person3];
+	var title, price;
 	var fs  = require("fs");
-	var htmlFile = fs.readFileSync('tmp/cg.html').toString().split('\n');
-
-	for (var i = 0; i < htmlFile.length; i++) {
-
-
-	}
+        //cheerio.load(fs.readFileSync('path/to/file.html'));
+	var htmlString = fs.readFileSync('tmp/sample.html').toString();
+	var $ = cheerio.load(htmlString);
+	$('li.result-row').each(function(i, element){
+		var data = $(this);
+		price = data.children().text(); 
+		console.log(price);
+    });      
 	res.json(contactlist);
 });
