@@ -41,7 +41,7 @@ searchEngineApp.controller('searchCtrl', function($http, $scope, $state, $stateP
 		};
 		return $http.get('/home/'+$scope.keywords, { cache: true }).then(function(resp) {
 			console.log("Get called...");
-			$scope.contactlist = resp.data;
+			$scope.cgList = resp.data;
         });
     };
 });

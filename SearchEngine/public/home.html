@@ -9,16 +9,16 @@
 <table class="table">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Number</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>link</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="contact in contactlist">
-          <td>{{contact.name}}</td>
-          <td>{{contact.email}}</td>
-          <td>{{contact.number}}</td>
+        <tr ng-repeat="item in cgList">
+          <td>{{item.title}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.link}}</td>
         </tr>
       </tbody>
     </table>
