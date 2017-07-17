@@ -22,7 +22,7 @@ handle the Search function
 app.get('/home/:keywords', function (req, res) {
   var keywords = req.params.keywords;
   var jsonData = cgParser.extractHTML();
-  console.log("HTML Parse: " +JSON.stringify(jsonData));
+  //console.log("HTML Parse: " +JSON.stringify(jsonData));
   console.log("Get called Keywords Submitted: "+keywords);    
 	res.json(jsonData);
 });
