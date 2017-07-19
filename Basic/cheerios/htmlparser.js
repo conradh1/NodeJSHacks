@@ -7,7 +7,7 @@ exports.extractHTML = function () {
 	var title, price, link;
 	var jsonData = [];
 	var fs  = require("fs");
-        //cheerio.load(fs.readFileSync('path/to/file.html'));
+    //cheerio.load(fs.readFileSync('path/to/file.html'));
 	var htmlString = fs.readFileSync('tmp/sample.html').toString();
 	var $ = cheerio.load(htmlString);
 	$('li.result-row').each(function(i, element){
