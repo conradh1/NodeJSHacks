@@ -1,7 +1,7 @@
 // Read all files in the folder in parallel.
     var fs = require("fs");
 
-    fs.readdir( ".", function( err, files) {
+    fs.readdir( "./tmp", function( err, files) {
         if ( err ) {
             console.log("Error reading files: ", err);
         } else {
@@ -17,7 +17,7 @@
             // for each file,
             for ( var i = 0; i < files.length; i++ ) {
                 // read its contents.
-                fs.readFile( files[i], function( error, data ) {
+                fs.readFile( './tmp/'+files[i], function( error, data ) {
                     if ( error ) {
                         console.log("Error: ", error);
                     } else {
