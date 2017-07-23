@@ -29,6 +29,3 @@ for (pool in pools) {
 		}
     }})(pool,n));
 }
-
-
-

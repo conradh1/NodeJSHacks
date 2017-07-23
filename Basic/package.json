@@ -1,0 +1,19 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "Just basic nodejs examples.",
+  "main": "demo_http_url.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "asyncawait": "^1.0.6",
+    "cheerio": "^1.0.0-rc.2",
+    "fs": "0.0.1-security",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}

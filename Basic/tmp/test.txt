@@ -38,3 +38,19 @@ Harman
 Aloha
 Conestoga
 Tualatin Hills
+Raleigh
+Aloha
+Somerset
+Sunset
+Tualatin Hills
+Beaverton
+Conestoga
+Harman
+Aloha
+Raleigh
+Somerset
+Sunset
+Tualatin Hills
+Harman
+Conestoga
+Beaverton
