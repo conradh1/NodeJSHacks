@@ -4,11 +4,12 @@
   "description": "Simple Web Search Engine.",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "latest",
     "express": "latest",
     "jsonfile": "latest",
     "request": "latest",
-    "request-promise": "latest",
-    "cheerio": "latest"
+    "request-promise": "latest"
   },
   "devDependencies": {},
   "scripts": {

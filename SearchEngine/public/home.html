@@ -9,18 +9,20 @@
 <table class="table">
       <thead>
         <tr>
-          <tdh>City</th>
-          <th>Title</th>
-          <th>Price</th>
-          <th>link</th>
+          <th>City</th>
+          <th>Min</th>
+          <th>Max</th>
+          <th>Avg</th>
+          <th>Listings</th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="item in cgList">
           <td><strong>{{item.city}}</strong></td>
-          <td>{{item.title}}</td>
-          <td>{{item.price}}</td>
-          <td><a href="{{item.link}}">{{item.link}}</a></td>
+          <td>{{item.Min}}</td>
+          <td>{{item.Max}}</td>
+          <td>{{item.Average}}</td>
+          <td>{{item.Entries}}</td>
         </tr>
       </tbody>
     </table>
