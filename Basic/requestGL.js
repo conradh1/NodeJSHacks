@@ -7,15 +7,6 @@ var headers = {
     'User-Agent': 'scottwrobinson'
 };
 
-var repos = [  
-    'scottwrobinson/camo',
-    'facebook/react',
-    'scottwrobinson/twentyjs',
-    'moment/moment',
-    'nodejs/node',
-    'lodash/lodash'
-];
-
 var jsonData = [];
 
 var suffixURL = '.craigslist.org/search/cta?query=lotus';
@@ -23,7 +14,7 @@ var prefixURL = 'https://';
 var cities = ['honolulu', 'phoenix', 'denver'];
 
 
-async function main() {  
+async function parseGL() {  
     let reqs = cities.map(async function(city) {
 		try {  
 			var body = await request.get(prefixURL+city+suffixURL);
@@ -55,4 +46,5 @@ async function main() {
     });
 }
 
-main();  
+console.log("Calling parseGL");
+parseGL();  
