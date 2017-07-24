@@ -9,6 +9,7 @@
 <table class="table">
       <thead>
         <tr>
+          <tdh>City</th>
           <th>Title</th>
           <th>Price</th>
           <th>link</th>
@@ -16,9 +17,10 @@
       </thead>
       <tbody>
         <tr ng-repeat="item in cgList">
+          <td><strong>{{item.city}}</strong></td>
           <td>{{item.title}}</td>
           <td>{{item.price}}</td>
-          <td>{{item.link}}</td>
+          <td><a href="{{item.link}}">{{item.link}}</a></td>
         </tr>
       </tbody>
     </table>

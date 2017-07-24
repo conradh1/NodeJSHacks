@@ -4,13 +4,10 @@
   "description": "Simple Web Search Engine.",
   "main": "app.js",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "fs": "0.0.1-security",
-    "jsonfile": "^3.0.1",
-    "readline": "^1.3.0",
-    "stream": "0.0.2",
+    "express": "latest",
+    "jsonfile": "latest",
     "request": "latest",
+    "request-promise": "latest",
     "cheerio": "latest"
   },
   "devDependencies": {},
